@@ -1,0 +1,47 @@
+#topo{
+    background: #CD853F;
+    width: 1900px;
+    height: 1080px;
+    margin-right: 20px; 
+}
+.static {
+    background: #D2B48C;
+    border: 3px solid #73AD21;
+    width: 550px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 205px;
+    float:left; 
+    font-family: sans-serif;
+    
+}
+.mito{
+    background: #D2B48C;
+    border: 3px solid #73AD21;
+    width: 550px;
+    height: 250px;
+    margin-right: 25px;
+    margin-top: 205px;
+    float: right;
+    
+}
+.ale{
+    background: #D2B48C;
+    border: 3px solid #73AD21;
+    width: 550px;
+    height: 250px;
+    margin-right: 82px;
+    margin-top: 205px;
+    float: right; 
+}
+
+.cen{
+    background: #FFFF00;
+    border: 3px solid #73AD21;
+    width: 550px;
+    height: 250px;
+    margin-right: 25px;
+    margin-top: 205px;
+    text-align: center;
+    
+}
