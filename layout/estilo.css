@@ -1,0 +1,61 @@
+div#cabecalho{
+background-color: green ;
+position: absolute;
+width: 1080px;
+height: 200px;
+left: 20%;
+top: 0%;
+}
+div#dadosDoJogador{
+ 
+ position: absolute;
+ width: 550px ;
+ height: 250px;
+ top : 25%;
+ left: 18%;
+}
+div#dicasParaOJogador{
+	
+ 	position: absolute;
+ 	width: 550px ;
+ 	height: 250px;
+ 	top : 25%;
+ 	right: 9%;
+}
+div#palavraJogada{
+	
+ 	position: absolute;
+ 	width: 550px ;
+ 	height: 250px;
+ 	top : 24%;
+ 	left: 40%;
+}
+div#ivo1{
+	position: absolute;
+ 	top: 43%;
+ 	right: 3%;
+
+}
+div#lousa{
+	position: absolute;
+	top :43%;
+ 	right: 35%;
+}
+div#dialogo{
+	position: absolute;
+	top :33%;
+	right: 4%;
+}
+div#menu {
+	background-color: black ;
+	position: absolute;
+	width: 1080px ;
+	height: 50px ;
+	top:74% ;
+
+}
+div#menu ul {
+	background-color: black ;
+	color: white ;
+	float: left;
+}
