@@ -1,11 +1,6 @@
-<!doctype html>
-<html lang="pt-br">
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<script>
-		
+<html><head><title>WebSocket</title>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<script type="text/javascript">
 rotate = 0; // Declaramos uma variável com a rotação 0.
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -59,15 +54,79 @@ document.addEventListener("DOMContentLoaded", function(){
 	
 
 });
-			
-		</script>	
-	</head>
-	<body>
-		<img class="centro" src="../img/roleta.png" class="" id="img" alt="Teste" />
-		<!--Aqui você carrega a imagem de sua escolha -->
-		<br />
-		<button id="back">Voltar </button> <!--botão voltar-->
-		<button id="next">avançar</button> <!--botão avançar-->
-		<button id="aleatorio">aleatorio</button> 
-	</body>
+
+var socket;
+
+function init() {
+	var host = "ws://127.0.0.1:9000/echobot"; // SET THIS TO YOUR SERVER
+	try {
+		socket = new WebSocket(host);
+		log('WebSocket - status '+socket.readyState);
+		socket.onopen    = function(msg) { 
+							   log("Welcome - status "+this.readyState); 
+						   };
+		socket.onmessage = function(msg) { 
+							   log("Received: "+msg.data); 
+						   };
+		socket.onclose   = function(msg) { 
+							   log("Disconnected - status "+this.readyState); 
+						   };
+	}
+	catch(ex){ 
+		log(ex); 
+	}
+	$("msg").focus();
+}
+
+function send(){
+	var txt,msg;
+	txt = $("msg");
+	msg = rotate;
+	txt.value=rotate;
+	txt.focus();
+	try { 
+		socket.send(rotate); // Aqui a msg que deve ser enviada
+		log('Sent: '+rotate); 
+ 	} catch(ex) { 
+		log(ex); 
+	}
+}
+function quit(){
+	if (socket != null) {
+		log("Goodbye!");
+		socket.close();
+		socket=null;
+	}
+}
+
+function reconnect() {
+	quit();
+	init();
+}
+
+// Utilities
+function $(id){ return document.getElementById(id); }
+function log(msg){ $("log").innerHTML+="<br>"+msg; }
+function onkey(event){ if(event.keyCode==13){ send(); } }
+</script>
+
+</head>
+<body onload="init()">
+<h3>Server</h3>
+<div id="log"></div>
+<input id="msg" type="textbox" onkeypress="onkey(event)"/>
+<button onclick="reconnect()">Reconnect</button>
+<div id="header">
+	    <div id="roleta">
+	      <h1> Roleta Test </h1>
+		  <img src="imagens/roleta.png" id="img" alt="Teste" />
+	    </div>
+	    <br />
+		<div id="botoes">
+		  <button class="estilizar" id="back">Voltar </button> <!--botão voltar-->
+		  <button class="estilizar" id="next">avançar</button> <!--botão avançar-->
+		  <button onclick="send()" class="estilizar" id="aleatorio">aleatorio</button> 
+		 </div>
+	  </div>
+</body>
 </html>

@@ -1,0 +1,39 @@
+body{
+  background-image:url("../imagens/seta-left.png");
+  background-repeat:no-repeat;
+  background-position:64.5% 66.5%;
+}
+#img{
+  margin-left:38.5%;
+}
+#botoes{
+  margin-left:45.3%;
+}
+#header{
+  margin-top:200px;
+}
+.estilizar{
+  color:white;
+  border-color: white;
+  background-color: #4682B4;
+  box-shadow:1px 1px 3px black;
+}
+#roleta h1{
+  text-align: center;
+  text-shadow: 1px 1px 4px black;
+  color: #6A5ACD;
+  font-size: 40px;
+  font-family: 
+}
+html,body {
+  font:normal 0.9em arial,helvetica;
+}
+#log {
+  width:100px; 
+  height:100px; 
+  border:1px solid #7F9DB9; 
+  overflow:auto;
+}
+#msg {
+  width:100px;
+}

@@ -1,0 +1,257 @@
+﻿.container {
+
+	width: 100%; 
+	float: left; 
+	padding: 3% 4%; 
+	text-align: center;
+
+}
+
+body{
+
+	padding: 0px;
+	margin: 0px;
+}
+
+#topo{
+
+	background: #F8F8FF;
+	width:945px;
+	height:300px;
+	margin:0 auto;
+	padding:0px;
+	
+}
+
+.tws{
+
+	margin-left: 210px;
+	margin-top: 80px;
+
+}
+
+#logo{
+
+	background:#000 ;
+	width:380px;
+	height: 200px;
+	margin-top: 50px;
+	float: left;
+
+}
+
+#logo p{
+
+	font-family: Verdana;
+	font-size: 30px;
+	margin-top: 20px;
+	float: right;
+
+}
+
+#contato{
+
+	background: #CDC9C9;
+	width: 180px;
+	height: 75px;
+	margin-top: 50px;
+	float: right;
+
+}
+
+#contato p {
+
+	font-family: verdana;
+	font-size: 15px;
+
+}
+
+ul {
+
+    width: 945px;
+	height: 45px;
+	margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    overflow: visible ;
+    background-color: #130400;
+
+}
+
+li {
+
+    float: left;
+
+}
+
+* {
+
+margin:0px;	
+
+}
+
+li a, .dropbtn {
+
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+
+    background-color: red;
+
+}
+
+li.dropdown {
+
+    display: inline-block;
+
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+#banner{
+	
+	width: 945px;
+	height: 170px;
+	margin: 0 auto;
+	background: transparent linear-gradient(to right, #CE2E3C, #DA6709) repeat scroll 0% 0%;
+	
+}
+
+.baixo{
+
+	background: #130400;
+	width: 945px;
+	height: 1020px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+
+}
+
+
+div.chamada{   
+
+	width: 245px;
+	height: 320px;
+	float: left;
+	margin-top: 20px;
+	margin-left:50px; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: transparent linear-gradient(to right, #CE2E3C, #DA6709) repeat scroll 0% 0%;
+	border-radius: 5%;
+	position: static;
+
+}
+
+.chamada{
+
+	font-family: verdana;
+
+	
+}
+
+h1, p{
+
+	text-align: center;
+
+}
+
+.chamada img {
+
+	border-radius: 5%;   
+    height: 200px;
+    position: center;
+    top:20%;
+    left:10%;
+    margin-top:50px;
+    margin-left:10px;
+	border-radius: 10%;
+
+}
+
+}
+
+body {
+
+	margin-right:  300px;
+	margin-left: 200px;
+
+}
+
+div.polaroid {
+
+  width: 100%;
+
+}
+
+div.container {
+
+  text-align: center;
+  padding: 0px 20px;
+
+}
+/*=========== RESET ==========*/
+
+* {margin: 0; padding: 0; font-size: ; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+font-family: 'Lato', sans-serif;}
+body {background-color: #f5f5f5;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+/*=========== CONTAINER ==========*/
+
+.container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
+/*=========== BG COLORS ==========*/
+
+.bg-gradient {background: linear-gradient(to right,#ce2e3c,#da6709);}
+.bg-black {background-color: #130400; }
+.bg-white {background-color: #fff;}
+/*=========== HELPERS ==========*/
+
+.radius {border-radius: 7px;}
+/* NEWSLETTER */
+
+.newsletter h2 {font-size: 1.5em; color: #fff; font-weight: 700;}
+.newsletter h3 {color: #fff;}
+.newsletter form {margin-top: 2%;}
+.newsletter input {width: 100%;  color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 5%; }
+.newsletter button {width: 100%;  color:#130400; padding: 5%; cursor: pointer; margin-top: 2%;}
+
+/* RODAPÉ */
+.social-icons a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgb(255,255,255);}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:2%;
+
+}
