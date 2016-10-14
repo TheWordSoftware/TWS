@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+	<script>
+	  var tema;
+	  function giro(){
+	    var graus = 45;
+		var giros = Math.round(1* Math.random() * 8);
+		var mult;
+		if(giros < 5){
+		  mult = 6;
+		}
+		else{
+		  mult = 4;
+		}
+		document.getElementById("g").style.transition = "7s";
+	    document.getElementById("g").style.transform = "rotate(" +(( graus*giros) + (360*mult))+ "deg)";
+		
+	    if(giros == 1){
+		  tema = "Carinho";
+		}
+		else if(giros == 2){
+		  tema = "Desafio";
+		}
+		else if(giros == 3){
+		  tema = "J offline";
+		}
+		else if(giros == 4){
+		  tema = "J online";
+		}
+		else if(giros == 5){
+		  tema = "Mico";
+		}
+		else if(giros == 6){
+		  tema = "Manual";
+		}
+		else if(giros == 7){
+		  tema = "Cultura";
+		}
+		else{
+		  tema = "Pintura";
+		}
+		document.getElementById("b").setAttribute("disabled", "disabled");
+		setTimeout(reset, 7500);
+	  }
+	  function reset(){
+	    document.getElementById("g").style.transition = "0s";
+	    document.getElementById("g").style.transform = "rotate(0deg)";
+		document.getElementById("g").style.display = "none";
+		document.getElementById("b").style.display = "none";
+		document.getElementById("se").style.display = "none";
+		document.getElementById("game").style.display = "";
+		document.getElementById("s").innerHTML = tema;
+	  }
+	  
+	  function show(){
+		document.getElementById("g").style.display = "";
+		document.getElementById("se").style.display = "";
+		document.getElementById("b").style.display = "";
+		document.getElementById("b").removeAttribute("disabled");
+		document.getElementById("game").style.display = "none";
+		document.getElementById("s").innerHTML = " ";
+	  }
+	  
+	</script>
+  </head>
+  <body>
+	<br>
+	<div id="game" style="display:none; width: 90%; margin: auto; box-shadow: 3px 3px 4px black; text-shadow: 2px 3px 3px black; background-color: rgba(0,0,0, 0.3); color: white">
+	  <h1>Game TWS</h1>
+	  <span>Tema: </span><span id="s"></span>
+	  <input style="width: 88%">
+	  <button style="font-size: 20px" onclick="show()">Enviar Resposta</button>
+	  <div>
+		
+	  </div>
+	</div>
+	<div id="g" style="width: 280px; height: 280px; margin: auto"><img src="roleta.png" style="width:280px"></div>
+	<div id="se" style="margin: auto; padding: 0; width: 50px; height: 50px"><img src="seta.png"></div>
+	<button id="b" onclick="giro()">Aleatorio</button>
+	<br><br><br><br>
+  </body>
+</html>		
