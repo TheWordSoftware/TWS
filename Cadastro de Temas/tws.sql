@@ -36,8 +36,6 @@ CREATE TABLE `pessoa` (
 -- Extraindo dados da tabela `pessoa`
 --
 
-INSERT INTO `pessoa` (`cpf`, `nome`, `idade`) VALUES
-('898989258', 'Alexandre Mito', 90);
 
 -- --------------------------------------------------------
 
@@ -61,7 +59,7 @@ CREATE TABLE `tw_item` (
 
 CREATE TABLE `tw_tema` (
   `tm_nome` varchar(45) NOT NULL,
-  `tm_codigo` int(11) NOT NULL
+  `tm_codigo` int NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -71,8 +69,6 @@ CREATE TABLE `tw_tema` (
 --
 -- Indexes for table `pessoa`
 --
-ALTER TABLE `pessoa`
-  ADD PRIMARY KEY (`cpf`);
 
 --
 -- Indexes for table `tw_item`
