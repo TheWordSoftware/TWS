@@ -1,0 +1,54 @@
+body{
+  font-size: 30pt;
+  text-align:center;
+  background-color:#abc;
+}
+h1{
+  font-size:35px;
+}
+.disable{
+	pointer-events: none;
+	background-color: #bfbfbf;
+}
+#roleta{
+	width: 441px; 
+	height: 441px; 
+	position: relative; 
+	top: 33px;
+	margin: auto;
+}
+#seta{
+	padding: 0;
+	position: relative;
+	top: 37px;
+}
+#button{
+	position: relative;
+	top: 15px;
+	width: 100px;
+	height: 36px;
+	border-radius: 5px;
+	font-size: 13px;
+	font-family: 'Oswald';
+	text-transform: uppercase;
+}
+
+#tema, #item{
+	text-decoration: none;
+	margin: 0px 10px 0px 10px;
+	color: white;
+	box-shadow: 0px 0px 2px 2px black;
+}
+nav{
+	background-color: #a582f5;
+	height: 49px;
+}
+#cadastro{
+	height: 50px;
+	width: 300px;
+	background-color: white;
+	margin: auto;
+	box-shadow: 0px 0px 5px 2px black;
+	position: relative;
+	top: 18px;
+}
