@@ -78,7 +78,7 @@ footer{
   
  }
 #menu {
-	border-bottom:3px solid #228B22;
+/* 	border-bottom:3px solid #228B22; */
 	height: 26.6px;
 	background-color:#FFFAFA;
 	width: 100%;
@@ -108,7 +108,7 @@ a:hover {
 
 #menu li ul {
  position: absolute;
-	top: 10.2em;
+	top: 11.5em;
  	left: -0.8em;
 	width: 2em;
 /* margin: -0.1;*/

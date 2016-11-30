@@ -124,7 +124,7 @@ window.onload = dropdown_init;
 
   <div class="banner">
                   <div id="logo-reitoria">
-                      <img src="imagens/logo.png" widht="300px" height="90px">
+                      <img src="../imagens/logo.png" widht="300px" height="90px">
                       <a class="acesso-reitoria"></a>
                   </div>
               </div>
@@ -136,8 +136,8 @@ window.onload = dropdown_init;
                   <li><a href="noticias.php" class="submenu" id="noticias.php">Notícias</a></li>
                   <li><a href="#" id="#">Mídia</a>
                       <ul>
-                          <li><a href="videos.php" class="submenu" id="videos.php">Vídeos</a></li>
-                          <li><a href="audios.php" class="submenu" id="audios.php">Áudios</a></li>
+                          <li><a href="videos.php" class="submenu" class="videos">Vídeos</a></li>
+                          <li><a href="audios.php" class="submenu" class="audios">Áudios</a></li>
                       </ul>
                   </li>
                   <li><a href="#" id="#">Atividades</a>
@@ -148,10 +148,10 @@ window.onload = dropdown_init;
                   </li>
                   <li><a href="#" id="#">Conteúdos</a>
                       <ul>
-                          <li><a href="paises_nacionalidades.php" class="submenu" id="paises_nacionalidades.php">Países e Nacionalidades</a></li>
-                          <li><a href="expressoes_termos.php" class="submenu" id="expressoes_termos.php">Expressões e Termos</a></li>
-              <li><a href="numerais.php" class="submenu" id="numerais.php">Numerais</a></li>
-      <li><a href="medidas.php" class="submenu" id="medidas.php">Medidas</a></li>
+                          <li><a href="paises_nacionalidades.php" class="submenu" id="paises_nacionalidades">Países e Nacionalidades</a></li>
+                          <li><a href="expressoes_termos.php" class="submenu" id="expressoes_termos">Expressões e Termos</a></li>
+                          <li><a href="numerais.php" class="submenu" id="numerais">Numerais</a></li>
+                          <li><a href="medidas.php" class="submenu" id="medidas">Medidas</a></li>
                       </ul>    
                   </li>
                   <li><a href="arquivos.php" class="submenu" id="arquivos.php">Envio</a></li>
@@ -160,7 +160,6 @@ window.onload = dropdown_init;
               </ul>
               <br><br>
           </nav>
-    </header>
 </body>
 </html>
     <?php
