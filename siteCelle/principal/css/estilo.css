@@ -292,13 +292,13 @@ span {
  line-height: 2;
  text-align: center;
  text-decoration: none;
- background-color: #69c; /* IE precisa desta declaração */
+ background-color: #00420c; /* IE precisa desta declaração */
  color: #fff;
  border: 1px solid #ccc; 
  border-width: 0 1px 1px;
  } 
 #menu a:hover {
  text-decoration: none;
- background: #c7daec;
+ background: #00420c;
  color:#69c;
  }

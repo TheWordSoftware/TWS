@@ -57,69 +57,73 @@ session_start();
             }
             ?>
             
-            <script type="text/javascript"> 
+<script type="text/javascript"> 
 // Menu Drop Down Acessível
 // TWS
-var dropdown_intervalId;
-var dropdown_ulId = (!dropdown_ulId) ? 'menu' : dropdown_ulId;
-var dropdown_delay = (!dropdown_delay) ? 0 : dropdown_delay;
- 
-function dropdown_init()
-{
- try
- {
-  var as = document.getElementById(dropdown_ulId).getElementsByTagName('a');
-  
-  for (var a = 0; a < as.length; a++)
-  {
-   as[a].onfocus = function() { dropdown_expand(this) }
-   as[a].onmouseover = function() { dropdown_expand(this) }
-   as[a].onblur = function() { dropdown_colapse(dropdown_delay) } 
-   as[a].onmouseout = function() { dropdown_colapse(dropdown_delay) }
-  }
-  
-  dropdown_colapse(0);
- 
- } catch(e){}
-}
- 
-function dropdown_expand(caller)
-{ 
- try
- { 
-  clearInterval(dropdown_intervalId);
-  
-  var uls = caller.parentNode.parentNode.getElementsByTagName('ul');
-  
-  for (var ul = 0; ul < uls.length; ul++)
-   uls[ul].style.left = "-1000em";
-  
-  caller.parentNode.getElementsByTagName('ul')[0].style.left = "auto";
-  
- } catch(e){} 
-}
- 
-function dropdown_colapse(milliseconds)
-{
- try
- {
-  clearInterval(dropdown_intervalId);
-  
-  dropdown_intervalId = setInterval(function()
-  {    
-   var uls = document.getElementById(dropdown_ulId).getElementsByTagName('ul');
-   
-   for (var ul = 0; ul < uls.length; ul++)
-    uls[ul].style.left = "-1000em";
-    
-   clearInterval(dropdown_intervalId);
-   
-  }, milliseconds, null);
-  
- } catch(e){}
-}
- 
-window.onload = dropdown_init;
+                var dropdown_intervalId;
+                var dropdown_ulId = (!dropdown_ulId) ? 'menu' : dropdown_ulId;
+                var dropdown_delay = (!dropdown_delay) ? 0 : dropdown_delay;
+                 
+                function dropdown_init()
+                {
+                 try
+                 {
+                  var as = document.getElementById(dropdown_ulId).getElementsByTagName('a');
+                  
+                  for (var a = 0; a < as.length; a++)
+                  {
+                   as[a].onfocus = function() { dropdown_expand(this) }
+                   as[a].onmouseover = function() { dropdown_expand(this) }
+                   as[a].onblur = function() { dropdown_colapse(dropdown_delay) } 
+                   as[a].onmouseout = function() { dropdown_colapse(dropdown_delay) }
+                  }
+                  
+                  dropdown_colapse(0);
+                 
+                 } catch(e){}
+                }
+                 
+                function dropdown_expand(caller)
+                { 
+                 try
+                 { 
+                  clearInterval(dropdown_intervalId);
+                  
+                  var uls = caller.parentNode.parentNode.getElementsByTagName('ul');
+                  
+                  for (var ul = 0; ul < uls.length; ul++)
+                   uls[ul].style.left = "-10000em";
+                  
+                  caller.parentNode.getElementsByTagName('ul')[0].style.left = "auto";
+                  
+                 } catch(e){} 
+                }
+                 
+                function dropdown_colapse(milliseconds)
+                {
+                 try
+                 {
+                  clearInterval(dropdown_intervalId);
+                  
+                  dropdown_intervalId = setInterval(function()
+                  {    
+                   var uls = document.getElementById(dropdown_ulId).getElementsByTagName('ul');
+                   
+                   for (var ul = 0; ul < uls.length; ul++) {
+                     uls[ul].style.left = "-10000em";
+                     uls[ul].style.display = "block"; 
+                   }
+                   
+                   // uls[ul].class = ''; 
+
+                   clearInterval(dropdown_intervalId);
+                   
+                  }, milliseconds, null);
+                  
+                 } catch(e){}
+                }
+                 
+                window.onload = dropdown_init;
 </script>
 
   <div class="banner">
@@ -135,19 +139,19 @@ window.onload = dropdown_init;
                   <li><a href="sobre.php" class="submenu" id="sobre.php">Sobre</a></li>
                   <li><a href="noticias.php" class="submenu" id="noticias.php">Notícias</a></li>
                   <li><a href="#" id="#">Mídia</a>
-                      <ul>
+                      <ul style="display:none;">
                           <li><a href="videos.php" class="submenu" class="videos">Vídeos</a></li>
                           <li><a href="audios.php" class="submenu" class="audios">Áudios</a></li>
                       </ul>
                   </li>
                   <li><a href="#" id="#">Atividades</a>
-                      <ul>
+                      <ul style="display:none;">
           <li><a href="quiz.php" class="submenu">Quiz 1</a></li>
           <li><a href="quiz_2.php" class="submenu">Quiz 2</a></li>
                       </ul>
                   </li>
                   <li><a href="#" id="#">Conteúdos</a>
-                      <ul>
+                      <ul style="display:none;">
                           <li><a href="paises_nacionalidades.php" class="submenu" id="paises_nacionalidades">Países e Nacionalidades</a></li>
                           <li><a href="expressoes_termos.php" class="submenu" id="expressoes_termos">Expressões e Termos</a></li>
                           <li><a href="numerais.php" class="submenu" id="numerais">Numerais</a></li>
