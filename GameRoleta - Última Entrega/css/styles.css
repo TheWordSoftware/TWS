@@ -1,0 +1,229 @@
+body{
+	background-image: url("../imagens/background/bg.jpg");
+	background-attachment: fixed;
+}
+h1{
+  font-size:35px;
+}
+nav{
+	background-color: #4682B4;
+	box-shadow: 2px 2px 3px 0px black;
+}
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	margin: auto;
+	width: 37%;
+}
+nav ul li{
+	display: inline;
+	float: left;
+	border-right: solid 0.1px white;
+}
+nav ul li:last-child{
+	border-right: solid 1px white;
+}
+nav ul li:first-child{
+	border-left: solid 1px white;
+}
+nav ul li a{
+	color: white;
+	display: block;
+	padding: 16px 16px 16px 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.objetivo{
+	width: 70%;
+	margin: auto;
+    font-size: 1.2em;
+}
+.link{
+	margin: auto; 
+	border: solid 3px;
+	background-color: #4682B4;
+	width: 23%;
+	min-width: 800px;
+	padding: 25px 10px 25px 10px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: sans-serif;
+	box-shadow: 0px 0px 3px 1px black;
+	border-radius: 5px;
+}
+#conteudo{
+	text-align: center;
+	font-family: sans-serif;
+	margin: 0px 2px 0px 2px;
+}
+#div-style{
+	border: solid 1px white;
+	padding-bottom: 100px;
+	width: 60%;
+	margin: auto;
+	border-radius: 5px 100px 5px 100px;
+	color: white;
+	background-color: #4682B4;
+	box-shadow: 0px 0px 3px 1px black;
+	margin-top: 130px;
+}
+#div-style h1, .title{
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.title{
+	color: #4682B4;
+}
+#roleta{
+	border-radius: 50%;
+    width: 98%;
+    margin: auto;
+}
+#div-roleta{
+	width: 25%;
+	margin: auto;
+}
+#button{
+	background-color: #4682B4;
+	color: white;
+	border: solid 2px;
+	width: 90px;
+	height: 50px;
+	border-radius: 10px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 7px;
+}
+.btn, .btn-responder{
+	background-color: #4682B4;
+	color: white;
+	border: solid 2px;
+	width: 40%;
+	height: 50px;
+	border-radius: 10px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 7px;
+}
+.btn-responder{
+	width: 20%;
+}
+.center{
+	text-align: center;
+}
+#seta img{
+	width: 60px;
+	position: relative;
+	top: 10px;
+	margin-bottom: 5px;
+}
+.formCadastro{
+	box-shadow: 2px 2px 8px 0px black;
+	width: 26%;
+	padding: 10px 15px 10px 15px;
+	margin: auto;
+	position: relative;
+	top: 50px;
+	padding-left: 10px;
+	background-color: #4682B4;
+	color: white;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+form input{
+	width: 100%;
+	border-radius: 5px;
+	height: 25px;
+	margin: 5px 0px 10px 0px;
+}
+form .file{
+	font-size: 16px;
+}
+form .text{
+	font-size: 18px;
+}
+select{
+	margin: auto;
+	font-size: 15px;
+	width: 39%;
+}
+.tema-item{
+	position: relative;
+	top: 15px;
+	border: solid 2px #4682B4;
+	width: 50%;
+	margin: auto;
+	border-radius: 10px;
+}
+.tema-item .resposta{
+	width: 50%;
+    font-size: 20px;
+    height: 25px;
+    margin: 0;
+}
+.formResposta h3{
+	margin: 8px;
+}
+.tema-item .tema{
+	border-bottom: solid 2px #4682B4;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
+    background-color: #4682B4;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-radius: 5px 5px 0px 0px;
+}
+.imagem-game{
+	border: solid 1px #4682B4;
+	width: 58%;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+}
+.imagem-game .objeto{
+	border-bottom: solid 1px #4682B4;
+	margin: 0;
+	padding: 10px 0px 10px 0px;
+}
+.imagem, audio{
+	width: 100%;
+}
+.img-audio{
+	width: 80%;
+	margin: auto;
+}
+.div-resp{
+	box-shadow: 2px 2px 8px 0px black;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4682B4;
+    color: white;
+   	padding: 10px 10px 30px 10px;
+    border-radius: 10px;
+}
+.div-resp a{
+	padding: 10px;
+	text-decoration: none;
+}
+.sub-tema{
+	background-color: #4682B4;
+	color: white;
+	text-transform: uppercase;
+	font-weight: lighter;
+	border-radius: 8px 8px 0px 0px;
+}
