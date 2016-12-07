@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 ?>
 <!DOCTYPE HTML>
@@ -214,4 +215,5 @@ session_start();
         // Encerra a conexão com o banco de dados
         mysqli_close($link);
     }
+     ob_end_flush();
     ?>
